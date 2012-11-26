@@ -27,6 +27,8 @@ ul, li {
     position: relative;
     background: #292929;
     float: left;
+    border-radius: 5px;
+    white-space: nowrap;
 }
 
 #nav li {
@@ -45,7 +47,22 @@ ul, li {
     font-size: 30px;
     font-family: helvetica, arial, sans-serif;
     text-decoration: none;
-    padding: 30px 45px;
-    width: 100%;
+}
 
+@media only screen and (min-width : 1050px) {
+    #nav li a {
+        padding: 30px 45px;
+    }
+}
+
+@media only screen and (max-width : 1050px) {
+    #nav li a {
+        padding: 25px 20px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #nav li a {
+        padding: 25px 20px;
+    }
 }
